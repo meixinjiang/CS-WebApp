@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS @ UoA</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="shortcut icon" href="UoA logo.jpg" type="image/png">
+		<script src="index.js"></script>
+	</head>
+	<body background="blue_bg.jpg">
+		<table id="deparment" style="font-size: 30px;" width="90%">
+			<tr>
+				<td><img src="http://redsox.tcs.auckland.ac.nz/ups/logo.svg" alt="UoA Logo" style="width:100px;height:100px;" align="top">
+				</td>
+				<td id="department">
+					Department of Computer Science
+				</td>
+			</tr>
+		</table>
+		<ul id="menu1">
+			<li onclick="dropdown();" id="menu">&#x2630;</li>
+		</ul>
+
+		<ul id="dropdown">
+			<li onclick="closeMenu();">&#10005;</li>
+			<li onclick="showPage('Home');">Home</li>
+			<li onclick="showPage('Courses');">Courses</li>
+			<li onclick="showPage('People');">People</li>
+			<li onclick="showPage('News');">News</li>
+			<li onclick="showPage('Notices');">Notices</li>
+			<li onclick="showPage('GuestBook');">Guest Book</li>
+		</ul>
+
+		<div id="Home">
+			<h1>Home</h1>
+			<p>Welcome to New Zealand's leading computer science department. We pride ourselves on the excellence of our staff and our students.</p>
+			<div align="center">
+				<table>
+					<tr>
+						<td onclick="showPage('Courses');" class="homeIcons">
+							<img src="courses.png" alt="Courses" style="width:90px;height:90px;">
+							<span class="caption">Courses</span>
+						</td>
+						<td onclick="showPage('People');" class="homeIcons">
+							<img src="people.png" alt="People" style="width:90px;height:90px;">
+							<span class="caption">People</span>
+						</td>
+						<td onclick="showPage('News');" class="homeIcons">
+							<img src="news.png" alt="News" style="width:90px;height:90px;">
+							<span class="caption">News</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<div align="center">
+								<table>
+									<tr>
+										<td onclick="showPage('Notices');" class="homeIcons">
+											<img src="notices.png" alt="Notices" style="width:90px;height:90px;">
+											<span class="caption">Notices</span>
+										</td>
+										<td onclick="showPage('GuestBook');" class="homeIcons">
+											<img src="guest book.png" alt="Guest Book" style="width:90px;height:90px;">
+											<span class="caption">Guest Book</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+
+		<div id="Courses">
+			<h1>Courses</h1>
+			<table id="showCourses"></table>
+		</div>
+
+		<div id="People">
+			<h1>People</h1>
+			<table id="showPeople" width="100%"></table>
+		</div>
+
+		<div id="News">
+			<h1>News</h1>
+			<table id="showNews"></table>
+		</div>
+
+		<div id="Notices">
+			<h1>Notices</h1>
+			<table id="showNotices"></table>
+		</div>
+
+		<div id="GuestBook">
+			<h1>Guest Book</h1>
+			<p>Please sign our guest book. Your comments are greatly appreciated</p>
+			<div align="center" id="form">
+				<form onsubmit="addComment(); return false;">
+					<textarea name="message" rows="10" cols="41" id="message" value=""></textarea>
+					<br>
+					Your name:
+					<input type="text" name="name" id="yourName" value="">
+					<input type="submit" value="Comment">
+				</form>
+			</div>
+			<h2>Recent Entries</h2>
+			<p id="showComments"></p>
+			<iframe src="http://redsox.tcs.auckland.ac.nz/ups/UniProxService.svc/htmlcomments" width="0" height="0" frameBorder="0">
+		</div>
+
+	</body>
+</html>

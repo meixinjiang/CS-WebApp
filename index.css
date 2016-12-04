@@ -1,0 +1,105 @@
+div {
+	font-family:"Arial";
+	color:white;
+}
+
+h1 {
+	border-bottom: 6px solid white;
+	padding-bottom: 10px;
+}
+
+#menu {
+	list-style:none;
+	position: fixed;
+	right:10px;
+	top:10px;
+	padding:10px;
+	background-color: #0B1E2C;
+	font-family:arial bold;
+	font-weight:bold;
+	font-size:30px;
+	color:#5FA8DD;
+}
+
+#menu:hover { 
+    background-color:rgb(0,71,127) !important;
+    color:white !important;
+}
+
+#dropdown {
+	list-style:none;
+	display:none;
+	position:fixed;
+	right:0;
+	top:55px;
+	width:150px;
+}
+
+li {
+	padding:10px;
+	background-color:rgba(0,71,127, 0.95);
+	color:white;
+	font-family:"Arial";
+}
+
+li:first-child { 
+	text-align:right; 
+}
+
+li:hover { 
+    background-color:#52A1DA;
+}
+
+#people {
+	height: 90px;
+	width:90px;
+	overflow: hidden;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+a:hover { 
+    color:#5EAADE;
+}
+
+.unicode {
+	font-size:30px;
+}
+
+#form {
+	background-color:rgba(255,255,255,0.1);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 25px;
+}
+
+.bottom {
+	border-bottom:3px solid white;
+	padding-bottom: 10px;
+}
+
+.top {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.caption {
+	display: block;
+	 text-align:center;
+}
+
+.homeIcons {
+	padding:15px;
+}
+
+.homeIcons:hover {
+	background-color:rgb(0,71,127);
+}
+
+#department {
+	color:white;
+	font-family:"Arial";
+}
