@@ -1,5 +1,5 @@
-# UoA-CS-WebApp
-University of Auckland Computer Science Web Application
+# CS-WebApp
+Computer Science Web Application
 
 Best viewed by resizing window to mobile size.
 
